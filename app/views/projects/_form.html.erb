@@ -32,6 +32,11 @@
   </div>
 
   <div class="form-group">
+    <%= f.label :tag_group, class: 'control-label' %>
+    <%= f.select :tag_group_id, tag_group_options, {:include_blank => true}, { class: 'form-control auth-form-control' } %>
+  </div>
+
+  <div class="form-group">
     <%= f.label t('private'), class: 'control-label' %>
     <%= f.check_box :disallow_join %>
   </div>
